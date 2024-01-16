@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url(/assets/fonts/Helvetica.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica";
+}
+/* Start Header */
+header {
+  width: 100%;
+  background-color: #f6f7f8;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 13px 0;
+}
+nav .navLeft {
+  display: flex;
+  align-items: center;
+}
+nav .logo {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-right: 40px;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+header nav ul li {
+  margin-right: 20px;
+}
+header nav ul .shopLink {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  position: relative;
+}
+.shopLink .shopDown {
+  width: 250%;
+  position: absolute;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  color: #212529;
+  border-radius: 5px;
+  border: 1px solid #dee1e6;
+  opacity: 0;
+}
+.shopLink:hover .shopDown {
+  opacity: 1;
+}
+.shopDown p {
+  padding: 10px 15px;
+}
+header nav ul a {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+.active {
+  color: rgba(0, 0, 0, 0.8);
+}
+header button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid #000;
+  color: #212529;
+  padding: 8px 14px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+header button:hover {
+  color: #fff;
+  background-color: #212529;
+}
+header button .count {
+  background-color: #212529;
+  color: #fff;
+  padding: 2px 7px;
+  border-radius: 50%;
+}
+/* start Section Home */
+#home {
+  width: 100%;
+  background-color: #212529;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.container {
+  padding: 100px 0;
+}
+#home h1 {
+  font-size: 56px;
+  margin-bottom: 10px;
+}
+#home p {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* Start Section Cards */
+#cards .container {
+  padding: 100px 150px;
+}
+#cards .cards {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+#cards .card {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  border-radius: 5px;
+  border: 1px solid #dee1e6;
+  flex-grow: calc(1);
+}
+.card .card-head img {
+  width: 100%;
+}
+.card .card-head{
+    position: relative;
+}
+.card .card-body {
+    height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 0;
+}
+.card .card-body .stars {
+  word-spacing: -15px;
+  margin: 10px 0;
+}
+.card .card-body .stars i {
+  font-size: 12px;
+  color: rgb(255, 193, 7);
+}
+.card .card-body p {
+  font-size: 14px;
+}
+.card .card-foot{
+display: flex;
+justify-content: center;
+margin-bottom: 30px;
+}
+.card .card-foot button {
+  border: 1px solid #212529;
+  background-color: transparent;
+  color: #212529;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.card .card-foot button:hover {
+  background-color: #212529;
+  color: #fff;
+}
+.sale {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #212529;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 12px;
+  padding: 5px 8px;
+}
+/* Start footer */
+footer {
+  background-color: #212529;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 50px 0;
+  text-align: center;
+}
